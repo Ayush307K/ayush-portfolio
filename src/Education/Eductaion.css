@@ -1,0 +1,147 @@
+.education {
+    background-color:#33333b;
+    padding: 2rem;
+  }
+  
+  .education-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto;
+    height: 70vh;
+  }
+  
+  .education-description {
+    width: 100%; 
+    margin-right: 2rem; 
+  }
+  
+  .Projects-Button {
+    width: fit-content;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(120deg, #f58a2c, #d36b10);
+    transition: all 0.3s;
+    box-shadow: 0px 10px 10px #ab5205;
+  }
+
+  .IconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    position: relative;
+  }
+  .svgBG {
+    width: 25px;
+    height: auto;
+  }
+  .svgFG {
+    width: 9px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+  }
+  .text {
+    color: rgb(240, 240, 240);
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .Projects-Button:hover .svgFG {
+    animation: clockwise 2s linear infinite;
+  }
+  
+  .Projects-Button:hover .svgBG {
+    animation: anti-clockwise 2s linear infinite;
+  }
+  @keyframes clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes anti-clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .Projects-Button:hover {
+    background-color: #f58a2c;
+  }
+  
+  
+  .education-card {
+    display: flex;
+    align-items: center;
+    background-color: #f58a2c;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(243, 243, 3, 0.3) 0px 0px 30px;
+  }
+
+  .education-card:hover {
+    box-shadow: 0 0 20px 0 rgba(95, 98, 24, 0.3);
+    transform: scale(1.06);
+  }
+  
+  
+  .educard-img {
+    background-color: #f58a2c;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .educard-img img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .education-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .education-year {
+    color:black;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .education-degree {
+    color: black;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .education-institution {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .education-image {
+    width: 100%; 
+    text-align: center;
+    padding-left: 20%;
+  }
+  
+  .education-image img {
+    max-width: 100%;
+    height: auto;
+  }

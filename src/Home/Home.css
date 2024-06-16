@@ -1,0 +1,175 @@
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #33333b;
+  background-image: linear-gradient(to right, #f58a2c 19%, #33333b 0%, #33333b 80%);
+  background-size: 100% 100%;
+  padding: 1rem;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.toggle-button {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1550px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 190px;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Align items to the center vertically */
+  text-align: left; /* Align text to the left */
+  padding-left: 50px; /* Add some padding to separate from the profile picture */
+  padding-top: 190px;
+}
+
+.profile-pic {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+
+.designation, .typing, .info, .button-container {
+  margin-bottom: 20px;
+}
+
+.designation {
+  color: azure;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+.typing {
+  font-size: 3.5rem;
+  color: rgb(245, 138, 44);
+}
+
+.info p {
+  margin: 0;
+  color: azure;
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid rgb(245, 138, 44); /* Orange border */
+  border-radius: 20px; /* Rounded edges */
+  margin-top: 40px;
+}
+
+.button-container .download-cv {
+  background-color: azure;
+  color: rgb(245, 138, 44);
+}
+
+.button-container .contact {
+  background-color: rgb(245, 138, 44); /* Orange background */
+  color: azure; /* Azure text */
+}
+
+.button-container .download-cv:hover {
+  background-color: #f58a2c; /* Change background color on hover */
+  color: #33333b; /* Change text color on hover */
+}
+
+.button-container .contact:hover {
+  background-color: #33333b; /* Change background color on hover */
+  color: #ffcc66; /* Change text color on hover */
+}
+
+
+.social-links {
+  margin-top: 50px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the left */
+  text-align: left; /* Align text to the left */
+  padding-right: 250px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #f58a2c;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffcc66;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+  }
+
+  .typing {
+    font-size: 2.5rem;
+  }
+
+  .info p {
+    font-size: 1.2rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .typing {
+    font-size: 2rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+}
+

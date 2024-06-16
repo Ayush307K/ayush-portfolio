@@ -1,0 +1,20 @@
+.icon-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 1.5rem;
+    background-color: RGB(45, 55, 72, 0.8);
+    border-radius: 15%;
+    margin: 5px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    transform-style: preserve-3d;
+}
+.icon-link:hover {
+    transform: translateY(-5px);
+    background-color: antiquewhite;
+    color: black;
+    
+}

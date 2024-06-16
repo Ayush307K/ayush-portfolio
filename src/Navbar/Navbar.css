@@ -1,0 +1,194 @@
+.header-container {
+  background-color: #33333b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it to the top of the page */
+  width: 100%; /* Make it span the full width of the page */
+  z-index: 1000; /* Ensure it is on top of other elements */
+  height: 7vh;
+}
+button, button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(255, 179, 0);
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(245, 138, 44);
+  box-shadow: 0px 10px 10px -10px rgb(245, 138, 44);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(245, 138, 44);
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffcc66;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-item:hover a {
+  color: #ffcc66;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  .nav-item a {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .nav-item a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 30px;
+  }
+}
