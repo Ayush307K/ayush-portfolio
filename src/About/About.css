@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .about{
     background:#33333b;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 2rem;
-    height: 90vh;
+    height: 100vh;
 }
 .about-main{
     display: flex;
