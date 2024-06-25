@@ -27,9 +27,9 @@ const Education = () => {
               <img src={eduImgWhite} alt="Education Icon" />
             </div>
             <div className="education-details">
-              <h6 className="education-year">2008-2018</h6>
+              <h6 className="education-year">2015-2020</h6>
               <h4 className="education-degree">Secondary Education</h4>
-              <h5 className="education-institution">Jain International School</h5>
+              <h5 className="education-institution">Maa Kalyanika Public School</h5>
             </div>
           </div>
           <div className="education-card">
@@ -37,9 +37,9 @@ const Education = () => {
               <img src={eduImgWhite} alt="Education Icon" />
             </div>
             <div className="education-details">
-              <h6 className="education-year">2018-2023</h6>
+              <h6 className="education-year">2021-2023</h6>
               <h4 className="education-degree">Senior Secondary Education</h4>
-              <h5 className="education-institution">Maa Kalyanika Public School</h5>
+              <h5 className="education-institution">Central Public School</h5>
             </div>
           </div>
           <div className="education-card">
